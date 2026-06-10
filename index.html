@@ -8,6 +8,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
 <meta name="apple-mobile-web-app-title" content="Dashboard"/>
 <meta name="theme-color" content="#EFE7D9"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"/>
 <title>My Dashboard</title>
 <style>html,body{margin:0;padding:0;background:#EFE7D9;-webkit-text-size-adjust:100%;}#root{min-height:100vh;}#boot{font:600 15px -apple-system,system-ui,sans-serif;color:#5E574B;padding:40px 24px;text-align:center;}</style>
 </head>
@@ -16439,5 +16442,6 @@ function LocationsView({
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", go);else go();
 })();</script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(e){console.warn("Service worker registration failed:",e);});});}</script>
 </body>
 </html>
